@@ -1,73 +1,44 @@
-# Neophronic AI Studio 🤖✨
+**Welcome to your Base44 project** 
 
-The official core software repository for the **Neophronic AI Studio** platform, engineered and managed under the parent entity **Neophronic Studios**. 
+**About**
 
-This platform delivers an enterprise-grade AI execution environment utilizing modern serverless architectures, responsive UI modules, and integrated usage-based subscription monetization workflows.
+View and Edit  your app on [Base44.com](http://Base44.com) 
 
----
+This project contains everything you need to run your app locally.
 
-## 🔒 Proprietary Notice & Access Control
+**Edit the code in your local development environment**
 
-**WARNING: CLOSED SOURCE AND PROPRIETARY SOFTWARE**  
-Copyright © 2026 Neophronic Studios. All Rights Reserved.
+Any change pushed to the repo will also be reflected in the Base44 Builder.
 
-* This codebase, its structural schemas, routing pipelines, prompt engineering arrays, and transaction logic are strict trade secrets of **Neophronic Studios**.
-* Unauthorized distribution, duplication, reverse-engineering, or hosting of this software via any media is strictly prohibited.
-* Access is strictly limited to authorized Co-Founders. Contributions automatically vest to the parent company under our active operating agreement.
+**Prerequisites:** 
 
----
+1. Clone the repository using the project's Git URL 
+2. Navigate to the project directory
+3. Install dependencies: `npm install`
+4. Create an `.env.local` file and set the right environment variables
 
-## 🚀 Technology Stack
+```
+VITE_BASE44_APP_ID=your_app_id
+VITE_BASE44_APP_BASE_URL=your_backend_url
 
-* **Frontend:** React.js / Vite / Tailwind CSS
-* **Build System & Compiler:** Vite
-* **Hosting & Serverless Layer:** Vercel (Hobby/Pro Cloud Infrastructure)
-* **DNS & Edge Network:** Cloudflare Proxy (Full SSL Encryption Enabled)
-* **Monetization Engine:** Integrated Subscription Gateway (Stripe/Merchant System API)
-
----
-
-## 🛠️ Local Development & Setup
-
-To spin up the project workspace locally for debugging or building new features, follow these configurations:
-
-### 1. Prerequisites
-Ensure you have **Node.js** (v18 or higher) installed on your machine.
-
-### 2. Dependency Installation
-Since dependency folders are blocked globally by our `.gitignore` boundaries, restore the required platform node packages locally:
-```bash
-npm install
+e.g.
+VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
+VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
 ```
 
-### 3. Local Environment Configuration
-Create a private `.env.local` file in the root directory to store development tokens securely. **Never commit this file to GitHub.**
-```env
-VITE_AI_PROVIDER_KEY=your_development_key_here
-VITE_SUBSCRIPTION_WEBHOOK_SECRET=your_dev_secret_here
-```
+Run the app: `npm run dev`
 
-### 4. Running the Development Server
-Launch the local local testing container:
-```bash
-npm run dev
-```
-Open your browser and navigate to the local environment link (typically `http://localhost:5173`) to test your frontend.
+**Publish your changes**
 
----
+Open [Base44.com](http://Base44.com) and click on Publish.
 
-## 📦 Cloud Deployment & Architecture Pipeline
+**Docs & Support**
 
-Our production infrastructure runs automated CI/CD deployments through **Vercel**:
+Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
 
-1. **Code Submissions:** Commits pushed to the `main` branch of this private repository automatically trigger a production build on Vercel.
-2. **Environment Variables:** Production keys (such as live Stripe keys and live AI endpoint keys) are strictly managed within the Vercel Project Settings panel under encrypted variables. They are never hardcoded into the codebase.
-3. **Domain Routing:** Traffic hitting `https://neophronic.com` passes through Cloudflare edge servers (Proxied, Orange Cloud) with encryption forced via **Full Mode** directly down to the Vercel origin cluster.
+Support: [https://app.base44.com/support](https://app.base44.com/support)
+
 
 ---
 
-## 👥 Co-Founder Agreement & Commit Guidelines
-
-* **Feature Isolation:** Always create a separate branch for testing new UI or backend elements before merging into `main`.
-* **Cost Protection:** Verify that any adjustments made to background processing pipelines do not create infinite API call loops that inflate our token billing overhead.
-* **Gateway Adjustments:** Any adjustments affecting the database architecture or payment processing webhooks must be mutually verified before pushing live to deployment.
+[![Restore to base44](https://img.shields.io/badge/Restore%20to-BASE44-orange?style=for-the-badge&logo=rocket)](https://app.base44.com/apps)
